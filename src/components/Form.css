@@ -1,0 +1,14 @@
+.form-container {
+    align-self: center;
+    align-content: center;
+    width: 40vw;
+    height: 40vh;
+    border: 3px solid #dedfed;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-self: right;
+    width: 50%;
+}

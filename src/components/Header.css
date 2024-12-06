@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1%;
+    margin-bottom: 1%;
+    align-items: center;
+    border-bottom: 3px solid #dedede;
+    box-shadow: 0px 5px 10px 5px #dedede;
+    position: sticky;
+}
+
+.header-title {
+    font-size: small;
+    font: caption;
+    font-family: 'Courier New', Courier, monospace;
+}
