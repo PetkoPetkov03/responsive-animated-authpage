@@ -49,7 +49,9 @@ const Form = () => {
                 <div className={animateState ? "form-anim animate" : "form-anim"}>
                     { formState ? <LoginForm /> : <RegisterForm/> }
                 </div>
-                <div className={animateState ? "plate animate" : "plate"}></div>
+                <div className={animateState ? "plate animate" : "plate"}>
+                    <img src="icon.svg" alt="no source" />
+                </div>
             </div>
             <button className="switch-button" onClick={switchForm}>{formState ? "Sign up" : "Sign in"}</button>
         </div>

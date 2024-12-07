@@ -1,21 +1,21 @@
 .form-container {
     display: flex;
+    font-size: 2vh;
     justify-content: center;
     align-items: center;
-    width: 40vw;
+    width: 45vw;
     height: 40vh;
+    min-width: 40vw;
     align-self: center;
-    border: 3px solid #dedfed;
-    border-radius: 10px;
+    border: 0.3vw solid #32333d;
+    border-radius: 2vh;
     position: relative;
-    box-shadow: 30px 40px 10px 5px #dedfed;
-
-    position: relative;
-    transition: transform 1s ease;
+    box-shadow: 1vh 3vh 0.5vh 0vh #dedfed;
 }
 
-.form-container.animate {
-    transform: rotate(30%);
+.plate > img:nth-child(1) {
+    width: 20vw;
+    height: 45vh;
 }
 
 .form {
@@ -32,15 +32,28 @@
 }
 
 .form > input {
-    width: 50%;
+    width: 13vw;
     justify-self: center;
     align-self: center;
-    border: 2px dotted #2b2a33;
-    margin: 2px;
+    border: 0.2vh solid #dedfed;
+    margin: 0.5vh;
+    border-radius: 0.5vh;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.form > button {
+    border: 0.3vh solid lightcoral;
+    background-color: lightcoral;
+    font-size: 2vh;
+    color: snow;
+    width: 40%;
+    margin-top: 0.5%;
+    box-shadow: 0.1vh 0.5vh 0.3vh 0vh #dedfed;
 }
 
 .form > input:hover {
-    border: 2px solid #2b2a33;
+    border: 0.2vh solid #2b2a33;
 }
 
 .plate {
@@ -50,7 +63,8 @@
     margin: auto;
     position: absolute;
     right: 0;
-    border-radius: 0 10px 10px 0;
+    height: 40vh;
+    border-radius: 0 0.5vh 0.5vh 0;
 }
 
 .plate, .form-anim {
@@ -58,12 +72,17 @@
 }
 
 .form-anim.animate {
-    transform: translateX(81.5%);
+    transform: translateX(23vw);
 }
 
 .plate.animate {
-    transform: translateX(-81.5%);
-    border-radius: 10px 0 0 10px;
+    transform: translateX(-23vw);
+    transform-style: preserve-3d;
+    border-radius: 0.5vh 0 0 0.5vh;
+}
+
+.plate.animate > img {
+    transform: scaleX(-1);
 }
 
 .form-wrapper {
@@ -79,9 +98,10 @@
     align-self: center;
     border: none;
     background-color: white;
-    width: 25%;
-    border: 2px solid lightcoral;
-    border-radius: 30px;
+    width: 25vw;
+    font-size: 2vh;
+    border: 0.2vh solid lightcoral;
+    border-radius: 1vh;
     background-color: lightcoral;
     color: snow;
 }

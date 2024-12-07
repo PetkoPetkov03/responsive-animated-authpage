@@ -2,16 +2,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1%;
-    margin-bottom: 1%;
+    width: 100vw;
+    height: 8vh;
+    margin-bottom: 5vh;
     align-items: center;
-    border-bottom: 3px solid #dedede;
-    box-shadow: 0px 5px 10px 5px #dedede;
+    border-bottom: 1vh solid #dedede;
+    box-shadow: 0vh 1vh 1vh 0vh #dedede;
     position: sticky;
+    font-size: 2vh;
 }
 
 .header-title {
-    font-size: small;
     font: caption;
+    font-size: 2vh;
     font-family: 'Courier New', Courier, monospace;
 }
