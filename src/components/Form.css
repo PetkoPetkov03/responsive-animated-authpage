@@ -1,14 +1,91 @@
 .form-container {
-    align-self: center;
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40vw;
     height: 40vh;
+    align-self: center;
     border: 3px solid #dedfed;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 30px 40px 10px 5px #dedfed;
+
+    position: relative;
+    transition: transform 1s ease;
+}
+
+.form-container.animate {
+    transform: rotate(30%);
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    align-self: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-anim {
+    position: absolute;
+    width: 22vw;
+    left: 0;
+}
+
+.form > input {
     width: 50%;
+    justify-self: center;
+    align-self: center;
+    border: 2px dotted #2b2a33;
+    margin: 2px;
+}
+
+.form > input:hover {
+    border: 2px solid #2b2a33;
+}
+
+.plate {
+    height: inherit;
+    width: 22vw;
+    background-color: #2b2a33;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.plate, .form-anim {
+    transition: transform 1s ease;
+}
+
+.form-anim.animate {
+    transform: translateX(81.5%);
+}
+
+.plate.animate {
+    transform: translateX(-81.5%);
+    border-radius: 10px 0 0 10px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+}
+
+.switch-button {
+    margin-top: 3%;
+    align-self: center;
+    border: none;
+    background-color: white;
+    width: 25%;
+    border: 2px solid lightcoral;
+    border-radius: 30px;
+    background-color: lightcoral;
+    color: snow;
+}
+
+.switch-button:hover {
+    background-color: rgba(240, 128, 128, 0.6);
 }

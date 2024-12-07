@@ -30,15 +30,28 @@ const RegisterForm = () => {
 const Form = () => {
 
     const [formState, setFormState] = useState<boolean>(true);
+    const [animateState, setAnimateState] = useState<boolean>(false);
 
     const switchForm = () => {
-        setFormState(!formState);
+        triggerAnimation();
+        setTimeout(() => {
+            setFormState(!formState);
+        }, 300);
+    }
+
+    const triggerAnimation = () => {
+        setAnimateState(!animateState);
     }
 
     return (
-        <div className="form-container">
-            { formState ? <LoginForm /> : <RegisterForm /> }
-            <button onClick={switchForm} type="button">{formState ? "Sign up" : "Sign in"}</button>
+        <div className="form-wrapper">
+            <div className="form-container animate">
+                <div className={animateState ? "form-anim animate" : "form-anim"}>
+                    { formState ? <LoginForm /> : <RegisterForm/> }
+                </div>
+                <div className={animateState ? "plate animate" : "plate"}></div>
+            </div>
+            <button className="switch-button" onClick={switchForm}>{formState ? "Sign up" : "Sign in"}</button>
         </div>
     )
 }
