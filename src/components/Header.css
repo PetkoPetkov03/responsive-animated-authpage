@@ -13,7 +13,16 @@
 }
 
 .header-title {
+    display: flex;
     font: caption;
     font-size: 2vh;
     font-family: 'Courier New', Courier, monospace;
+    width: 30vw;
+    justify-content: center;
+}
+
+.link-container {
+    display: flex;
+    width: 10vw;
+    justify-content: space-around;
 }

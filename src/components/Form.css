@@ -40,6 +40,8 @@
     border-radius: 0.5vh;
     text-align: center;
     font-size: 2vh;
+    user-select: none;
+    outline: none;
 }
 
 .form > button {
@@ -52,7 +54,17 @@
     box-shadow: 0.1vh 0.5vh 0.3vh 0vh #dedfed;
 }
 
+.form > .sign:active {
+    background-color: rgba(240, 128, 128, 0.6);
+    transform: scale(0.9);
+}
+
 .form > input:hover {
+    border: 0.2vh solid #2b2a33;
+}
+
+.form > input:focus {
+    box-shadow: none;
     border: 0.2vh solid #2b2a33;
 }
 
@@ -106,6 +118,7 @@
     color: snow;
 }
 
-.switch-button:hover {
+.switch-button:active {
+    transform: scale(0.9);
     background-color: rgba(240, 128, 128, 0.6);
 }
